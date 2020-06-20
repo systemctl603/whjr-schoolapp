@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@keyframes enlarge {
+  from {  }
+  to {
+    box-shadow: 10px 10px 5px grey;
+  }
+}
+
+:root {
+  --text-color: #fafafa;
+  --bg-color: #171616;
+}
+
+* {
+  font-family: Roboto
+}
+
+body {
+  background-color: var(--bg-color)
+}
+
+.navbar {
+  background-color: #636363
+}
+.navbar:last-child {
+  position: absolute;
+  right: 0px;
+}
+
+.text {
+  color: var(--text-color);
+}
+.motto {
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+.motto:hover {
+  animation: enlarge 0.5s forwards;
+}
